@@ -1,0 +1,44 @@
+# --- Derived feature / decomposition caches -----------------
+# Regenerated automatically on first run (deterministic inputs). Never commit.
+/.feat_cache/
+/comparison/.roi_cache/
+/comparison/.nmf_maps_cache/
+
+# --- CHAOS dataset ------------------------------------------
+# Obtain from the CHAOS challenge, see README.
+/Train_Sets/
+/Test_Sets/
+
+# --- Superseded / archived material -------------------------
+# 25-epoch snapshot, old results/models/outputs, dev step1..23 scripts (~276 MB).
+/Archive/
+
+# --- Trained U-Net fold models ------------------------------
+# Kept OUT of the repo (large binaries; regenerable with `--fresh --epochs 40`).
+# To ship them instead, remove this line and prefer Git LFS or a GitHub Release.
+/comparison/models/
+
+# --- Run markers --------------------------------------------
+comparison/results/*.flag
+
+# --- Python -------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Editors / IDEs -----------------------------------------
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+
+# --- OS junk ------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Office temp / lock files (in case a .docx ever lands here)
+~$*
+~WRL*.tmp
