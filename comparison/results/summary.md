@@ -11,11 +11,13 @@ Shared patients: n = 20
 
 ## Paired Wilcoxon signed-rank (full-volume Dice)
 
-| Comparison | median diff | p-value |
-|------------|-------------|---------|
-| NMF-only vs CNN-only | -0.110 | 0.0006 |
-| NMF-only vs NMF+CNN (ROI) | -0.117 | 0.0001 |
-| NMF-only vs NMF+CNN (ch) | -0.115 | 0.0000 |
-| CNN-only vs NMF+CNN (ROI) | -0.012 | 0.4749 |
-| CNN-only vs NMF+CNN (ch) | -0.002 | 0.5459 |
-| NMF+CNN (ROI) vs NMF+CNN (ch) | +0.007 | 0.8408 |
+Holm-Bonferroni adjusts for the 6 pairwise comparisons; significance is assessed on the adjusted p-values.
+
+| Comparison | median diff | p-value | Holm-adj. p |
+|------------|-------------|---------|-------------|
+| NMF-only vs CNN-only | -0.110 | 0.0006 | 0.0023 |
+| NMF-only vs NMF+CNN (ROI) | -0.117 | 0.0001 | 0.0005 |
+| NMF-only vs NMF+CNN (ch) | -0.115 | 0.0000 | 0.0000 |
+| CNN-only vs NMF+CNN (ROI) | -0.012 | 0.4749 | 1.0000 |
+| CNN-only vs NMF+CNN (ch) | -0.002 | 0.5459 | 1.0000 |
+| NMF+CNN (ROI) vs NMF+CNN (ch) | +0.007 | 0.8408 | 1.0000 |

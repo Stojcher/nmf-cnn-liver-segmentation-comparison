@@ -70,6 +70,23 @@ def wilcoxon(a, b):
         return None
 
 
+def holm_bonferroni(pvals):
+    """Holm-Bonferroni step-down adjusted p-values, returned in input order.
+
+    Controls the family-wise error rate over the set of pairwise comparisons
+    (less conservative than plain Bonferroni). Adjusted values are capped at 1
+    and made monotonic non-decreasing along the sorted p-values.
+    """
+    p = np.asarray(pvals, float)
+    m = len(p)
+    adj = np.ones(m, float)
+    prev = 0.0
+    for rank, idx in enumerate(np.argsort(p)):          # smallest -> largest
+        prev = max(prev, min((m - rank) * p[idx], 1.0))  # enforce monotonicity
+        adj[idx] = prev
+    return adj
+
+
 def main():
     present = [(k, name) for k, name in ARMS if load_arm(k) is not None]
     if not present:
@@ -96,20 +113,28 @@ def main():
                      f"| {sl['mean']:.3f} +/- {sl['std']:.3f} "
                      f"| {sf['median']:.3f} | {sf['min']:.3f} | {sf['ge70']}/{sf['n']} |")
 
-    # ---- paired significance ----
-    lines += ["\n## Paired Wilcoxon signed-rank (full-volume Dice)\n",
-              "| Comparison | median diff | p-value |",
-              "|------------|-------------|---------|"]
+    # ---- paired significance (Holm-Bonferroni corrected for the multiple
+    #      pairwise comparisons) ----
     keys = [k for k, _ in present]
     names = {k: n for k, n in present}
+    comps = []
     for i in range(len(keys)):
         for j in range(i + 1, len(keys)):
-            a, b = keys[i], keys[j]
-            res = wilcoxon(full[a], full[b])
+            res = wilcoxon(full[keys[i]], full[keys[j]])
             if res is None:
                 continue
             _, p, md = res
-            lines.append(f"| {names[a]} vs {names[b]} | {md:+.3f} | {p:.4f} |")
+            comps.append((f"{names[keys[i]]} vs {names[keys[j]]}", md, p))
+
+    holm = holm_bonferroni([p for _, _, p in comps]) if comps else []
+
+    lines += ["\n## Paired Wilcoxon signed-rank (full-volume Dice)\n",
+              f"Holm-Bonferroni adjusts for the {len(comps)} pairwise "
+              "comparisons; significance is assessed on the adjusted p-values.\n",
+              "| Comparison | median diff | p-value | Holm-adj. p |",
+              "|------------|-------------|---------|-------------|"]
+    for (name, md, p), pa in zip(comps, holm):
+        lines.append(f"| {name} | {md:+.3f} | {p:.4f} | {pa:.4f} |")
 
     table_md = "\n".join(lines) + "\n"
     with open(os.path.join(cd.RESULTS_DIR, "table.md"), "w") as fh:
