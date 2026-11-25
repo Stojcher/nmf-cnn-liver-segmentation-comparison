@@ -1,0 +1,901 @@
+perturbation,severity,approach,patient,dice_full
+noise,0.0,CNN-only,1,0.9051
+noise,0.0,NMF+CNN (ROI),1,0.9557
+noise,0.0,NMF+CNN (channels),1,0.8908
+bias,0.0,CNN-only,1,0.9051
+bias,0.0,NMF+CNN (ROI),1,0.9557
+bias,0.0,NMF+CNN (channels),1,0.8908
+motion,0.0,CNN-only,1,0.9051
+motion,0.0,NMF+CNN (ROI),1,0.9557
+motion,0.0,NMF+CNN (channels),1,0.8908
+noise,0.02,CNN-only,1,0.9057
+noise,0.02,NMF+CNN (ROI),1,0.9505
+noise,0.02,NMF+CNN (channels),1,0.8848
+noise,0.05,CNN-only,1,0.9044
+noise,0.05,NMF+CNN (ROI),1,0.9451
+noise,0.05,NMF+CNN (channels),1,0.8867
+noise,0.1,CNN-only,1,0.8224
+noise,0.1,NMF+CNN (ROI),1,0.9285
+noise,0.1,NMF+CNN (channels),1,0.8573
+noise,0.15,CNN-only,1,0.7484
+noise,0.15,NMF+CNN (ROI),1,0.5759
+noise,0.15,NMF+CNN (channels),1,0.7962
+bias,0.1,CNN-only,1,0.9011
+bias,0.1,NMF+CNN (ROI),1,0.9430
+bias,0.1,NMF+CNN (channels),1,0.8939
+bias,0.2,CNN-only,1,0.9024
+bias,0.2,NMF+CNN (ROI),1,0.9499
+bias,0.2,NMF+CNN (channels),1,0.8935
+bias,0.3,CNN-only,1,0.9099
+bias,0.3,NMF+CNN (ROI),1,0.9541
+bias,0.3,NMF+CNN (channels),1,0.8971
+bias,0.4,CNN-only,1,0.8922
+bias,0.4,NMF+CNN (ROI),1,0.9410
+bias,0.4,NMF+CNN (channels),1,0.8838
+motion,0.1,CNN-only,1,0.7248
+motion,0.1,NMF+CNN (ROI),1,0.2273
+motion,0.1,NMF+CNN (channels),1,0.6481
+motion,0.2,CNN-only,1,0.7040
+motion,0.2,NMF+CNN (ROI),1,0.7420
+motion,0.2,NMF+CNN (channels),1,0.6680
+motion,0.3,CNN-only,1,0.5991
+motion,0.3,NMF+CNN (ROI),1,0.2268
+motion,0.3,NMF+CNN (channels),1,0.6186
+motion,0.4,CNN-only,1,0.3316
+motion,0.4,NMF+CNN (ROI),1,0.0000
+motion,0.4,NMF+CNN (channels),1,0.3353
+noise,0.0,CNN-only,8,0.8550
+noise,0.0,NMF+CNN (ROI),8,0.8779
+noise,0.0,NMF+CNN (channels),8,0.8644
+bias,0.0,CNN-only,8,0.8550
+bias,0.0,NMF+CNN (ROI),8,0.8779
+bias,0.0,NMF+CNN (channels),8,0.8644
+motion,0.0,CNN-only,8,0.8550
+motion,0.0,NMF+CNN (ROI),8,0.8779
+motion,0.0,NMF+CNN (channels),8,0.8644
+noise,0.02,CNN-only,8,0.8685
+noise,0.02,NMF+CNN (ROI),8,0.8811
+noise,0.02,NMF+CNN (channels),8,0.8558
+noise,0.05,CNN-only,8,0.8714
+noise,0.05,NMF+CNN (ROI),8,0.8874
+noise,0.05,NMF+CNN (channels),8,0.8613
+noise,0.1,CNN-only,8,0.8433
+noise,0.1,NMF+CNN (ROI),8,0.8944
+noise,0.1,NMF+CNN (channels),8,0.7819
+noise,0.15,CNN-only,8,0.7876
+noise,0.15,NMF+CNN (ROI),8,0.8480
+noise,0.15,NMF+CNN (channels),8,0.7359
+bias,0.1,CNN-only,8,0.8435
+bias,0.1,NMF+CNN (ROI),8,0.8827
+bias,0.1,NMF+CNN (channels),8,0.8611
+bias,0.2,CNN-only,8,0.8636
+bias,0.2,NMF+CNN (ROI),8,0.8845
+bias,0.2,NMF+CNN (channels),8,0.8339
+bias,0.3,CNN-only,8,0.8308
+bias,0.3,NMF+CNN (ROI),8,0.8786
+bias,0.3,NMF+CNN (channels),8,0.8327
+bias,0.4,CNN-only,8,0.8392
+bias,0.4,NMF+CNN (ROI),8,0.8677
+bias,0.4,NMF+CNN (channels),8,0.7958
+motion,0.1,CNN-only,8,0.7574
+motion,0.1,NMF+CNN (ROI),8,0.8394
+motion,0.1,NMF+CNN (channels),8,0.7481
+motion,0.2,CNN-only,8,0.7625
+motion,0.2,NMF+CNN (ROI),8,0.7936
+motion,0.2,NMF+CNN (channels),8,0.7313
+motion,0.3,CNN-only,8,0.5120
+motion,0.3,NMF+CNN (ROI),8,0.1293
+motion,0.3,NMF+CNN (channels),8,0.5155
+motion,0.4,CNN-only,8,0.4777
+motion,0.4,NMF+CNN (ROI),8,0.0068
+motion,0.4,NMF+CNN (channels),8,0.4929
+noise,0.0,CNN-only,36,0.8668
+noise,0.0,NMF+CNN (ROI),36,0.9022
+noise,0.0,NMF+CNN (channels),36,0.8297
+bias,0.0,CNN-only,36,0.8668
+bias,0.0,NMF+CNN (ROI),36,0.9022
+bias,0.0,NMF+CNN (channels),36,0.8297
+motion,0.0,CNN-only,36,0.8668
+motion,0.0,NMF+CNN (ROI),36,0.9022
+motion,0.0,NMF+CNN (channels),36,0.8297
+noise,0.02,CNN-only,36,0.8723
+noise,0.02,NMF+CNN (ROI),36,0.9105
+noise,0.02,NMF+CNN (channels),36,0.8361
+noise,0.05,CNN-only,36,0.8593
+noise,0.05,NMF+CNN (ROI),36,0.8902
+noise,0.05,NMF+CNN (channels),36,0.8166
+noise,0.1,CNN-only,36,0.8837
+noise,0.1,NMF+CNN (ROI),36,0.6117
+noise,0.1,NMF+CNN (channels),36,0.6048
+noise,0.15,CNN-only,36,0.8858
+noise,0.15,NMF+CNN (ROI),36,0.4490
+noise,0.15,NMF+CNN (channels),36,0.6052
+bias,0.1,CNN-only,36,0.8680
+bias,0.1,NMF+CNN (ROI),36,0.8018
+bias,0.1,NMF+CNN (channels),36,0.8345
+bias,0.2,CNN-only,36,0.8731
+bias,0.2,NMF+CNN (ROI),36,0.9141
+bias,0.2,NMF+CNN (channels),36,0.8154
+bias,0.3,CNN-only,36,0.8505
+bias,0.3,NMF+CNN (ROI),36,0.9060
+bias,0.3,NMF+CNN (channels),36,0.8274
+bias,0.4,CNN-only,36,0.8703
+bias,0.4,NMF+CNN (ROI),36,0.9171
+bias,0.4,NMF+CNN (channels),36,0.8371
+motion,0.1,CNN-only,36,0.7301
+motion,0.1,NMF+CNN (ROI),36,0.3707
+motion,0.1,NMF+CNN (channels),36,0.6397
+motion,0.2,CNN-only,36,0.5984
+motion,0.2,NMF+CNN (ROI),36,0.0000
+motion,0.2,NMF+CNN (channels),36,0.5198
+motion,0.3,CNN-only,36,0.4885
+motion,0.3,NMF+CNN (ROI),36,0.0000
+motion,0.3,NMF+CNN (channels),36,0.4332
+motion,0.4,CNN-only,36,0.4869
+motion,0.4,NMF+CNN (ROI),36,0.0000
+motion,0.4,NMF+CNN (channels),36,0.3992
+noise,0.0,CNN-only,37,0.8752
+noise,0.0,NMF+CNN (ROI),37,0.7771
+noise,0.0,NMF+CNN (channels),37,0.8724
+bias,0.0,CNN-only,37,0.8752
+bias,0.0,NMF+CNN (ROI),37,0.7771
+bias,0.0,NMF+CNN (channels),37,0.8724
+motion,0.0,CNN-only,37,0.8752
+motion,0.0,NMF+CNN (ROI),37,0.7771
+motion,0.0,NMF+CNN (channels),37,0.8724
+noise,0.02,CNN-only,37,0.8773
+noise,0.02,NMF+CNN (ROI),37,0.8086
+noise,0.02,NMF+CNN (channels),37,0.8744
+noise,0.05,CNN-only,37,0.8677
+noise,0.05,NMF+CNN (ROI),37,0.8079
+noise,0.05,NMF+CNN (channels),37,0.8765
+noise,0.1,CNN-only,37,0.8540
+noise,0.1,NMF+CNN (ROI),37,0.8430
+noise,0.1,NMF+CNN (channels),37,0.7264
+noise,0.15,CNN-only,37,0.8393
+noise,0.15,NMF+CNN (ROI),37,0.7955
+noise,0.15,NMF+CNN (channels),37,0.6981
+bias,0.1,CNN-only,37,0.8736
+bias,0.1,NMF+CNN (ROI),37,0.7994
+bias,0.1,NMF+CNN (channels),37,0.8713
+bias,0.2,CNN-only,37,0.8726
+bias,0.2,NMF+CNN (ROI),37,0.8221
+bias,0.2,NMF+CNN (channels),37,0.8558
+bias,0.3,CNN-only,37,0.8703
+bias,0.3,NMF+CNN (ROI),37,0.8652
+bias,0.3,NMF+CNN (channels),37,0.8665
+bias,0.4,CNN-only,37,0.8714
+bias,0.4,NMF+CNN (ROI),37,0.8661
+bias,0.4,NMF+CNN (channels),37,0.8438
+motion,0.1,CNN-only,37,0.7777
+motion,0.1,NMF+CNN (ROI),37,0.7333
+motion,0.1,NMF+CNN (channels),37,0.7542
+motion,0.2,CNN-only,37,0.5866
+motion,0.2,NMF+CNN (ROI),37,0.5034
+motion,0.2,NMF+CNN (channels),37,0.6728
+motion,0.3,CNN-only,37,0.5622
+motion,0.3,NMF+CNN (ROI),37,0.5018
+motion,0.3,NMF+CNN (channels),37,0.5087
+motion,0.4,CNN-only,37,0.3640
+motion,0.4,NMF+CNN (ROI),37,0.0806
+motion,0.4,NMF+CNN (channels),37,0.3738
+noise,0.0,CNN-only,5,0.8586
+noise,0.0,NMF+CNN (ROI),5,0.8307
+noise,0.0,NMF+CNN (channels),5,0.8336
+bias,0.0,CNN-only,5,0.8586
+bias,0.0,NMF+CNN (ROI),5,0.8307
+bias,0.0,NMF+CNN (channels),5,0.8336
+motion,0.0,CNN-only,5,0.8586
+motion,0.0,NMF+CNN (ROI),5,0.8307
+motion,0.0,NMF+CNN (channels),5,0.8336
+noise,0.02,CNN-only,5,0.8591
+noise,0.02,NMF+CNN (ROI),5,0.8241
+noise,0.02,NMF+CNN (channels),5,0.8389
+noise,0.05,CNN-only,5,0.8574
+noise,0.05,NMF+CNN (ROI),5,0.7930
+noise,0.05,NMF+CNN (channels),5,0.8313
+noise,0.1,CNN-only,5,0.8389
+noise,0.1,NMF+CNN (ROI),5,0.7463
+noise,0.1,NMF+CNN (channels),5,0.8043
+noise,0.15,CNN-only,5,0.8084
+noise,0.15,NMF+CNN (ROI),5,0.7390
+noise,0.15,NMF+CNN (channels),5,0.6003
+bias,0.1,CNN-only,5,0.8589
+bias,0.1,NMF+CNN (ROI),5,0.8731
+bias,0.1,NMF+CNN (channels),5,0.8467
+bias,0.2,CNN-only,5,0.8478
+bias,0.2,NMF+CNN (ROI),5,0.8286
+bias,0.2,NMF+CNN (channels),5,0.8222
+bias,0.3,CNN-only,5,0.8597
+bias,0.3,NMF+CNN (ROI),5,0.8279
+bias,0.3,NMF+CNN (channels),5,0.8363
+bias,0.4,CNN-only,5,0.8618
+bias,0.4,NMF+CNN (ROI),5,0.8620
+bias,0.4,NMF+CNN (channels),5,0.8390
+motion,0.1,CNN-only,5,0.7434
+motion,0.1,NMF+CNN (ROI),5,0.7813
+motion,0.1,NMF+CNN (channels),5,0.6626
+motion,0.2,CNN-only,5,0.6273
+motion,0.2,NMF+CNN (ROI),5,0.4910
+motion,0.2,NMF+CNN (channels),5,0.6453
+motion,0.3,CNN-only,5,0.3299
+motion,0.3,NMF+CNN (ROI),5,0.0663
+motion,0.3,NMF+CNN (channels),5,0.5457
+motion,0.4,CNN-only,5,0.2566
+motion,0.4,NMF+CNN (ROI),5,0.0001
+motion,0.4,NMF+CNN (channels),5,0.3855
+noise,0.0,CNN-only,31,0.8813
+noise,0.0,NMF+CNN (ROI),31,0.9459
+noise,0.0,NMF+CNN (channels),31,0.9106
+bias,0.0,CNN-only,31,0.8813
+bias,0.0,NMF+CNN (ROI),31,0.9459
+bias,0.0,NMF+CNN (channels),31,0.9106
+motion,0.0,CNN-only,31,0.8813
+motion,0.0,NMF+CNN (ROI),31,0.9459
+motion,0.0,NMF+CNN (channels),31,0.9106
+noise,0.02,CNN-only,31,0.8810
+noise,0.02,NMF+CNN (ROI),31,0.9415
+noise,0.02,NMF+CNN (channels),31,0.9082
+noise,0.05,CNN-only,31,0.8833
+noise,0.05,NMF+CNN (ROI),31,0.9378
+noise,0.05,NMF+CNN (channels),31,0.9147
+noise,0.1,CNN-only,31,0.8848
+noise,0.1,NMF+CNN (ROI),31,0.9174
+noise,0.1,NMF+CNN (channels),31,0.8836
+noise,0.15,CNN-only,31,0.7648
+noise,0.15,NMF+CNN (ROI),31,0.8550
+noise,0.15,NMF+CNN (channels),31,0.7803
+bias,0.1,CNN-only,31,0.8763
+bias,0.1,NMF+CNN (ROI),31,0.9386
+bias,0.1,NMF+CNN (channels),31,0.9122
+bias,0.2,CNN-only,31,0.8797
+bias,0.2,NMF+CNN (ROI),31,0.9435
+bias,0.2,NMF+CNN (channels),31,0.9080
+bias,0.3,CNN-only,31,0.8943
+bias,0.3,NMF+CNN (ROI),31,0.9433
+bias,0.3,NMF+CNN (channels),31,0.9050
+bias,0.4,CNN-only,31,0.8742
+bias,0.4,NMF+CNN (ROI),31,0.9416
+bias,0.4,NMF+CNN (channels),31,0.9031
+motion,0.1,CNN-only,31,0.6701
+motion,0.1,NMF+CNN (ROI),31,0.8642
+motion,0.1,NMF+CNN (channels),31,0.5919
+motion,0.2,CNN-only,31,0.6559
+motion,0.2,NMF+CNN (ROI),31,0.6558
+motion,0.2,NMF+CNN (channels),31,0.5679
+motion,0.3,CNN-only,31,0.5822
+motion,0.3,NMF+CNN (ROI),31,0.7194
+motion,0.3,NMF+CNN (channels),31,0.5259
+motion,0.4,CNN-only,31,0.4712
+motion,0.4,NMF+CNN (ROI),31,0.7636
+motion,0.4,NMF+CNN (channels),31,0.5641
+noise,0.0,CNN-only,33,0.9234
+noise,0.0,NMF+CNN (ROI),33,0.9407
+noise,0.0,NMF+CNN (channels),33,0.9178
+bias,0.0,CNN-only,33,0.9234
+bias,0.0,NMF+CNN (ROI),33,0.9407
+bias,0.0,NMF+CNN (channels),33,0.9178
+motion,0.0,CNN-only,33,0.9234
+motion,0.0,NMF+CNN (ROI),33,0.9407
+motion,0.0,NMF+CNN (channels),33,0.9178
+noise,0.02,CNN-only,33,0.9235
+noise,0.02,NMF+CNN (ROI),33,0.9390
+noise,0.02,NMF+CNN (channels),33,0.9215
+noise,0.05,CNN-only,33,0.9218
+noise,0.05,NMF+CNN (ROI),33,0.9337
+noise,0.05,NMF+CNN (channels),33,0.9220
+noise,0.1,CNN-only,33,0.9151
+noise,0.1,NMF+CNN (ROI),33,0.9219
+noise,0.1,NMF+CNN (channels),33,0.9211
+noise,0.15,CNN-only,33,0.9020
+noise,0.15,NMF+CNN (ROI),33,0.9309
+noise,0.15,NMF+CNN (channels),33,0.8785
+bias,0.1,CNN-only,33,0.9231
+bias,0.1,NMF+CNN (ROI),33,0.9390
+bias,0.1,NMF+CNN (channels),33,0.9224
+bias,0.2,CNN-only,33,0.9215
+bias,0.2,NMF+CNN (ROI),33,0.9326
+bias,0.2,NMF+CNN (channels),33,0.9239
+bias,0.3,CNN-only,33,0.9215
+bias,0.3,NMF+CNN (ROI),33,0.9349
+bias,0.3,NMF+CNN (channels),33,0.9240
+bias,0.4,CNN-only,33,0.9171
+bias,0.4,NMF+CNN (ROI),33,0.9281
+bias,0.4,NMF+CNN (channels),33,0.9138
+motion,0.1,CNN-only,33,0.7824
+motion,0.1,NMF+CNN (ROI),33,0.8660
+motion,0.1,NMF+CNN (channels),33,0.8002
+motion,0.2,CNN-only,33,0.6696
+motion,0.2,NMF+CNN (ROI),33,0.8499
+motion,0.2,NMF+CNN (channels),33,0.6797
+motion,0.3,CNN-only,33,0.6766
+motion,0.3,NMF+CNN (ROI),33,0.8160
+motion,0.3,NMF+CNN (channels),33,0.6825
+motion,0.4,CNN-only,33,0.4326
+motion,0.4,NMF+CNN (ROI),33,0.6094
+motion,0.4,NMF+CNN (channels),33,0.4190
+noise,0.0,CNN-only,39,0.9388
+noise,0.0,NMF+CNN (ROI),39,0.9454
+noise,0.0,NMF+CNN (channels),39,0.9356
+bias,0.0,CNN-only,39,0.9388
+bias,0.0,NMF+CNN (ROI),39,0.9454
+bias,0.0,NMF+CNN (channels),39,0.9356
+motion,0.0,CNN-only,39,0.9388
+motion,0.0,NMF+CNN (ROI),39,0.9454
+motion,0.0,NMF+CNN (channels),39,0.9356
+noise,0.02,CNN-only,39,0.9390
+noise,0.02,NMF+CNN (ROI),39,0.9480
+noise,0.02,NMF+CNN (channels),39,0.9362
+noise,0.05,CNN-only,39,0.9394
+noise,0.05,NMF+CNN (ROI),39,0.9394
+noise,0.05,NMF+CNN (channels),39,0.9357
+noise,0.1,CNN-only,39,0.9320
+noise,0.1,NMF+CNN (ROI),39,0.9358
+noise,0.1,NMF+CNN (channels),39,0.9246
+noise,0.15,CNN-only,39,0.9255
+noise,0.15,NMF+CNN (ROI),39,0.9153
+noise,0.15,NMF+CNN (channels),39,0.8699
+bias,0.1,CNN-only,39,0.9395
+bias,0.1,NMF+CNN (ROI),39,0.9385
+bias,0.1,NMF+CNN (channels),39,0.9370
+bias,0.2,CNN-only,39,0.9379
+bias,0.2,NMF+CNN (ROI),39,0.9454
+bias,0.2,NMF+CNN (channels),39,0.9370
+bias,0.3,CNN-only,39,0.9402
+bias,0.3,NMF+CNN (ROI),39,0.9365
+bias,0.3,NMF+CNN (channels),39,0.9309
+bias,0.4,CNN-only,39,0.9354
+bias,0.4,NMF+CNN (ROI),39,0.9372
+bias,0.4,NMF+CNN (channels),39,0.9314
+motion,0.1,CNN-only,39,0.9038
+motion,0.1,NMF+CNN (ROI),39,0.9272
+motion,0.1,NMF+CNN (channels),39,0.8998
+motion,0.2,CNN-only,39,0.7879
+motion,0.2,NMF+CNN (ROI),39,0.7012
+motion,0.2,NMF+CNN (channels),39,0.7943
+motion,0.3,CNN-only,39,0.5361
+motion,0.3,NMF+CNN (ROI),39,0.7973
+motion,0.3,NMF+CNN (channels),39,0.6477
+motion,0.4,CNN-only,39,0.4524
+motion,0.4,NMF+CNN (ROI),39,0.1740
+motion,0.4,NMF+CNN (channels),39,0.6359
+noise,0.0,CNN-only,13,0.8627
+noise,0.0,NMF+CNN (ROI),13,0.8881
+noise,0.0,NMF+CNN (channels),13,0.8673
+bias,0.0,CNN-only,13,0.8627
+bias,0.0,NMF+CNN (ROI),13,0.8881
+bias,0.0,NMF+CNN (channels),13,0.8673
+motion,0.0,CNN-only,13,0.8627
+motion,0.0,NMF+CNN (ROI),13,0.8881
+motion,0.0,NMF+CNN (channels),13,0.8673
+noise,0.02,CNN-only,13,0.8612
+noise,0.02,NMF+CNN (ROI),13,0.8978
+noise,0.02,NMF+CNN (channels),13,0.8675
+noise,0.05,CNN-only,13,0.8706
+noise,0.05,NMF+CNN (ROI),13,0.9002
+noise,0.05,NMF+CNN (channels),13,0.8669
+noise,0.1,CNN-only,13,0.8632
+noise,0.1,NMF+CNN (ROI),13,0.8261
+noise,0.1,NMF+CNN (channels),13,0.8489
+noise,0.15,CNN-only,13,0.8368
+noise,0.15,NMF+CNN (ROI),13,0.7341
+noise,0.15,NMF+CNN (channels),13,0.7264
+bias,0.1,CNN-only,13,0.8614
+bias,0.1,NMF+CNN (ROI),13,0.9024
+bias,0.1,NMF+CNN (channels),13,0.8650
+bias,0.2,CNN-only,13,0.8599
+bias,0.2,NMF+CNN (ROI),13,0.9089
+bias,0.2,NMF+CNN (channels),13,0.8600
+bias,0.3,CNN-only,13,0.8649
+bias,0.3,NMF+CNN (ROI),13,0.8968
+bias,0.3,NMF+CNN (channels),13,0.8760
+bias,0.4,CNN-only,13,0.8639
+bias,0.4,NMF+CNN (ROI),13,0.8862
+bias,0.4,NMF+CNN (channels),13,0.8595
+motion,0.1,CNN-only,13,0.8298
+motion,0.1,NMF+CNN (ROI),13,0.8278
+motion,0.1,NMF+CNN (channels),13,0.8169
+motion,0.2,CNN-only,13,0.6463
+motion,0.2,NMF+CNN (ROI),13,0.5310
+motion,0.2,NMF+CNN (channels),13,0.6919
+motion,0.3,CNN-only,13,0.3684
+motion,0.3,NMF+CNN (ROI),13,0.1761
+motion,0.3,NMF+CNN (channels),13,0.4977
+motion,0.4,CNN-only,13,0.3920
+motion,0.4,NMF+CNN (ROI),13,0.1522
+motion,0.4,NMF+CNN (channels),13,0.4660
+noise,0.0,CNN-only,15,0.0835
+noise,0.0,NMF+CNN (ROI),15,0.1535
+noise,0.0,NMF+CNN (channels),15,0.2778
+bias,0.0,CNN-only,15,0.0835
+bias,0.0,NMF+CNN (ROI),15,0.1535
+bias,0.0,NMF+CNN (channels),15,0.2778
+motion,0.0,CNN-only,15,0.0835
+motion,0.0,NMF+CNN (ROI),15,0.1535
+motion,0.0,NMF+CNN (channels),15,0.2778
+noise,0.02,CNN-only,15,0.0851
+noise,0.02,NMF+CNN (ROI),15,0.1791
+noise,0.02,NMF+CNN (channels),15,0.3062
+noise,0.05,CNN-only,15,0.1049
+noise,0.05,NMF+CNN (ROI),15,0.3392
+noise,0.05,NMF+CNN (channels),15,0.3451
+noise,0.1,CNN-only,15,0.1357
+noise,0.1,NMF+CNN (ROI),15,0.0583
+noise,0.1,NMF+CNN (channels),15,0.2729
+noise,0.15,CNN-only,15,0.0849
+noise,0.15,NMF+CNN (ROI),15,0.0600
+noise,0.15,NMF+CNN (channels),15,0.1093
+bias,0.1,CNN-only,15,0.0814
+bias,0.1,NMF+CNN (ROI),15,0.2164
+bias,0.1,NMF+CNN (channels),15,0.2944
+bias,0.2,CNN-only,15,0.0838
+bias,0.2,NMF+CNN (ROI),15,0.0000
+bias,0.2,NMF+CNN (channels),15,0.3418
+bias,0.3,CNN-only,15,0.0811
+bias,0.3,NMF+CNN (ROI),15,0.1934
+bias,0.3,NMF+CNN (channels),15,0.3898
+bias,0.4,CNN-only,15,0.0766
+bias,0.4,NMF+CNN (ROI),15,0.1899
+bias,0.4,NMF+CNN (channels),15,0.2558
+motion,0.1,CNN-only,15,0.0304
+motion,0.1,NMF+CNN (ROI),15,0.0188
+motion,0.1,NMF+CNN (channels),15,0.2568
+motion,0.2,CNN-only,15,0.0513
+motion,0.2,NMF+CNN (ROI),15,0.0046
+motion,0.2,NMF+CNN (channels),15,0.3463
+motion,0.3,CNN-only,15,0.0457
+motion,0.3,NMF+CNN (ROI),15,0.0000
+motion,0.3,NMF+CNN (channels),15,0.1618
+motion,0.4,CNN-only,15,0.0207
+motion,0.4,NMF+CNN (ROI),15,0.0054
+motion,0.4,NMF+CNN (channels),15,0.1335
+noise,0.0,CNN-only,20,0.9211
+noise,0.0,NMF+CNN (ROI),20,0.9128
+noise,0.0,NMF+CNN (channels),20,0.9249
+bias,0.0,CNN-only,20,0.9211
+bias,0.0,NMF+CNN (ROI),20,0.9128
+bias,0.0,NMF+CNN (channels),20,0.9249
+motion,0.0,CNN-only,20,0.9211
+motion,0.0,NMF+CNN (ROI),20,0.9128
+motion,0.0,NMF+CNN (channels),20,0.9249
+noise,0.02,CNN-only,20,0.9213
+noise,0.02,NMF+CNN (ROI),20,0.9174
+noise,0.02,NMF+CNN (channels),20,0.9237
+noise,0.05,CNN-only,20,0.9212
+noise,0.05,NMF+CNN (ROI),20,0.9003
+noise,0.05,NMF+CNN (channels),20,0.9328
+noise,0.1,CNN-only,20,0.9133
+noise,0.1,NMF+CNN (ROI),20,0.7920
+noise,0.1,NMF+CNN (channels),20,0.9052
+noise,0.15,CNN-only,20,0.9091
+noise,0.15,NMF+CNN (ROI),20,0.7727
+noise,0.15,NMF+CNN (channels),20,0.8252
+bias,0.1,CNN-only,20,0.9210
+bias,0.1,NMF+CNN (ROI),20,0.9145
+bias,0.1,NMF+CNN (channels),20,0.9212
+bias,0.2,CNN-only,20,0.9177
+bias,0.2,NMF+CNN (ROI),20,0.4420
+bias,0.2,NMF+CNN (channels),20,0.9208
+bias,0.3,CNN-only,20,0.9123
+bias,0.3,NMF+CNN (ROI),20,0.8988
+bias,0.3,NMF+CNN (channels),20,0.9130
+bias,0.4,CNN-only,20,0.9051
+bias,0.4,NMF+CNN (ROI),20,0.9064
+bias,0.4,NMF+CNN (channels),20,0.9150
+motion,0.1,CNN-only,20,0.8016
+motion,0.1,NMF+CNN (ROI),20,0.7469
+motion,0.1,NMF+CNN (channels),20,0.7893
+motion,0.2,CNN-only,20,0.7755
+motion,0.2,NMF+CNN (ROI),20,0.0978
+motion,0.2,NMF+CNN (channels),20,0.7424
+motion,0.3,CNN-only,20,0.7009
+motion,0.3,NMF+CNN (ROI),20,0.0722
+motion,0.3,NMF+CNN (channels),20,0.6813
+motion,0.4,CNN-only,20,0.5372
+motion,0.4,NMF+CNN (ROI),20,0.0000
+motion,0.4,NMF+CNN (channels),20,0.6220
+noise,0.0,CNN-only,22,0.8685
+noise,0.0,NMF+CNN (ROI),22,0.9516
+noise,0.0,NMF+CNN (channels),22,0.9394
+bias,0.0,CNN-only,22,0.8685
+bias,0.0,NMF+CNN (ROI),22,0.9516
+bias,0.0,NMF+CNN (channels),22,0.9394
+motion,0.0,CNN-only,22,0.8685
+motion,0.0,NMF+CNN (ROI),22,0.9516
+motion,0.0,NMF+CNN (channels),22,0.9394
+noise,0.02,CNN-only,22,0.8670
+noise,0.02,NMF+CNN (ROI),22,0.9611
+noise,0.02,NMF+CNN (channels),22,0.9384
+noise,0.05,CNN-only,22,0.8620
+noise,0.05,NMF+CNN (ROI),22,0.9618
+noise,0.05,NMF+CNN (channels),22,0.9396
+noise,0.1,CNN-only,22,0.8582
+noise,0.1,NMF+CNN (ROI),22,0.9547
+noise,0.1,NMF+CNN (channels),22,0.9385
+noise,0.15,CNN-only,22,0.8305
+noise,0.15,NMF+CNN (ROI),22,0.9233
+noise,0.15,NMF+CNN (channels),22,0.8455
+bias,0.1,CNN-only,22,0.8667
+bias,0.1,NMF+CNN (ROI),22,0.9623
+bias,0.1,NMF+CNN (channels),22,0.9372
+bias,0.2,CNN-only,22,0.8694
+bias,0.2,NMF+CNN (ROI),22,0.9584
+bias,0.2,NMF+CNN (channels),22,0.9345
+bias,0.3,CNN-only,22,0.8706
+bias,0.3,NMF+CNN (ROI),22,0.9580
+bias,0.3,NMF+CNN (channels),22,0.9370
+bias,0.4,CNN-only,22,0.8662
+bias,0.4,NMF+CNN (ROI),22,0.9522
+bias,0.4,NMF+CNN (channels),22,0.9276
+motion,0.1,CNN-only,22,0.7159
+motion,0.1,NMF+CNN (ROI),22,0.8463
+motion,0.1,NMF+CNN (channels),22,0.7821
+motion,0.2,CNN-only,22,0.5384
+motion,0.2,NMF+CNN (ROI),22,0.5804
+motion,0.2,NMF+CNN (channels),22,0.6320
+motion,0.3,CNN-only,22,0.3573
+motion,0.3,NMF+CNN (ROI),22,0.2296
+motion,0.3,NMF+CNN (channels),22,0.3925
+motion,0.4,CNN-only,22,0.3336
+motion,0.4,NMF+CNN (ROI),22,0.1996
+motion,0.4,NMF+CNN (channels),22,0.4164
+noise,0.0,CNN-only,2,0.8873
+noise,0.0,NMF+CNN (ROI),2,0.8562
+noise,0.0,NMF+CNN (channels),2,0.9178
+bias,0.0,CNN-only,2,0.8873
+bias,0.0,NMF+CNN (ROI),2,0.8562
+bias,0.0,NMF+CNN (channels),2,0.9178
+motion,0.0,CNN-only,2,0.8873
+motion,0.0,NMF+CNN (ROI),2,0.8562
+motion,0.0,NMF+CNN (channels),2,0.9178
+noise,0.02,CNN-only,2,0.8870
+noise,0.02,NMF+CNN (ROI),2,0.8765
+noise,0.02,NMF+CNN (channels),2,0.9113
+noise,0.05,CNN-only,2,0.8745
+noise,0.05,NMF+CNN (ROI),2,0.8737
+noise,0.05,NMF+CNN (channels),2,0.9095
+noise,0.1,CNN-only,2,0.8815
+noise,0.1,NMF+CNN (ROI),2,0.8714
+noise,0.1,NMF+CNN (channels),2,0.9078
+noise,0.15,CNN-only,2,0.8808
+noise,0.15,NMF+CNN (ROI),2,0.8183
+noise,0.15,NMF+CNN (channels),2,0.8382
+bias,0.1,CNN-only,2,0.8876
+bias,0.1,NMF+CNN (ROI),2,0.9035
+bias,0.1,NMF+CNN (channels),2,0.9079
+bias,0.2,CNN-only,2,0.8875
+bias,0.2,NMF+CNN (ROI),2,0.8749
+bias,0.2,NMF+CNN (channels),2,0.9128
+bias,0.3,CNN-only,2,0.8888
+bias,0.3,NMF+CNN (ROI),2,0.8851
+bias,0.3,NMF+CNN (channels),2,0.9084
+bias,0.4,CNN-only,2,0.8771
+bias,0.4,NMF+CNN (ROI),2,0.8772
+bias,0.4,NMF+CNN (channels),2,0.8999
+motion,0.1,CNN-only,2,0.8653
+motion,0.1,NMF+CNN (ROI),2,0.8649
+motion,0.1,NMF+CNN (channels),2,0.8478
+motion,0.2,CNN-only,2,0.7773
+motion,0.2,NMF+CNN (ROI),2,0.3788
+motion,0.2,NMF+CNN (channels),2,0.6945
+motion,0.3,CNN-only,2,0.8132
+motion,0.3,NMF+CNN (ROI),2,0.0992
+motion,0.3,NMF+CNN (channels),2,0.7309
+motion,0.4,CNN-only,2,0.6291
+motion,0.4,NMF+CNN (ROI),2,0.0000
+motion,0.4,NMF+CNN (channels),2,0.5217
+noise,0.0,CNN-only,3,0.8509
+noise,0.0,NMF+CNN (ROI),3,0.8037
+noise,0.0,NMF+CNN (channels),3,0.8581
+bias,0.0,CNN-only,3,0.8509
+bias,0.0,NMF+CNN (ROI),3,0.8037
+bias,0.0,NMF+CNN (channels),3,0.8581
+motion,0.0,CNN-only,3,0.8509
+motion,0.0,NMF+CNN (ROI),3,0.8037
+motion,0.0,NMF+CNN (channels),3,0.8581
+noise,0.02,CNN-only,3,0.8517
+noise,0.02,NMF+CNN (ROI),3,0.7513
+noise,0.02,NMF+CNN (channels),3,0.7346
+noise,0.05,CNN-only,3,0.8435
+noise,0.05,NMF+CNN (ROI),3,0.7370
+noise,0.05,NMF+CNN (channels),3,0.8185
+noise,0.1,CNN-only,3,0.7852
+noise,0.1,NMF+CNN (ROI),3,0.5792
+noise,0.1,NMF+CNN (channels),3,0.7364
+noise,0.15,CNN-only,3,0.7973
+noise,0.15,NMF+CNN (ROI),3,0.1435
+noise,0.15,NMF+CNN (channels),3,0.6161
+bias,0.1,CNN-only,3,0.8479
+bias,0.1,NMF+CNN (ROI),3,0.8176
+bias,0.1,NMF+CNN (channels),3,0.8021
+bias,0.2,CNN-only,3,0.8552
+bias,0.2,NMF+CNN (ROI),3,0.7239
+bias,0.2,NMF+CNN (channels),3,0.7716
+bias,0.3,CNN-only,3,0.8558
+bias,0.3,NMF+CNN (ROI),3,0.8024
+bias,0.3,NMF+CNN (channels),3,0.8253
+bias,0.4,CNN-only,3,0.8347
+bias,0.4,NMF+CNN (ROI),3,0.7805
+bias,0.4,NMF+CNN (channels),3,0.8024
+motion,0.1,CNN-only,3,0.7362
+motion,0.1,NMF+CNN (ROI),3,0.7262
+motion,0.1,NMF+CNN (channels),3,0.7671
+motion,0.2,CNN-only,3,0.5149
+motion,0.2,NMF+CNN (ROI),3,0.4440
+motion,0.2,NMF+CNN (channels),3,0.4156
+motion,0.3,CNN-only,3,0.4724
+motion,0.3,NMF+CNN (ROI),3,0.1510
+motion,0.3,NMF+CNN (channels),3,0.3804
+motion,0.4,CNN-only,3,0.4778
+motion,0.4,NMF+CNN (ROI),3,0.0874
+motion,0.4,NMF+CNN (channels),3,0.3784
+noise,0.0,CNN-only,10,0.9015
+noise,0.0,NMF+CNN (ROI),10,0.8774
+noise,0.0,NMF+CNN (channels),10,0.8941
+bias,0.0,CNN-only,10,0.9015
+bias,0.0,NMF+CNN (ROI),10,0.8774
+bias,0.0,NMF+CNN (channels),10,0.8941
+motion,0.0,CNN-only,10,0.9015
+motion,0.0,NMF+CNN (ROI),10,0.8774
+motion,0.0,NMF+CNN (channels),10,0.8941
+noise,0.02,CNN-only,10,0.9014
+noise,0.02,NMF+CNN (ROI),10,0.8748
+noise,0.02,NMF+CNN (channels),10,0.8798
+noise,0.05,CNN-only,10,0.9022
+noise,0.05,NMF+CNN (ROI),10,0.8846
+noise,0.05,NMF+CNN (channels),10,0.8774
+noise,0.1,CNN-only,10,0.8934
+noise,0.1,NMF+CNN (ROI),10,0.8159
+noise,0.1,NMF+CNN (channels),10,0.6862
+noise,0.15,CNN-only,10,0.8973
+noise,0.15,NMF+CNN (ROI),10,0.8071
+noise,0.15,NMF+CNN (channels),10,0.5196
+bias,0.1,CNN-only,10,0.9014
+bias,0.1,NMF+CNN (ROI),10,0.8649
+bias,0.1,NMF+CNN (channels),10,0.8897
+bias,0.2,CNN-only,10,0.9016
+bias,0.2,NMF+CNN (ROI),10,0.8870
+bias,0.2,NMF+CNN (channels),10,0.8902
+bias,0.3,CNN-only,10,0.9027
+bias,0.3,NMF+CNN (ROI),10,0.8492
+bias,0.3,NMF+CNN (channels),10,0.8824
+bias,0.4,CNN-only,10,0.8998
+bias,0.4,NMF+CNN (ROI),10,0.8417
+bias,0.4,NMF+CNN (channels),10,0.8937
+motion,0.1,CNN-only,10,0.8472
+motion,0.1,NMF+CNN (ROI),10,0.8370
+motion,0.1,NMF+CNN (channels),10,0.6441
+motion,0.2,CNN-only,10,0.6678
+motion,0.2,NMF+CNN (ROI),10,0.7276
+motion,0.2,NMF+CNN (channels),10,0.4990
+motion,0.3,CNN-only,10,0.7273
+motion,0.3,NMF+CNN (ROI),10,0.6916
+motion,0.3,NMF+CNN (channels),10,0.5767
+motion,0.4,CNN-only,10,0.4202
+motion,0.4,NMF+CNN (ROI),10,0.0000
+motion,0.4,NMF+CNN (channels),10,0.3136
+noise,0.0,CNN-only,21,0.9275
+noise,0.0,NMF+CNN (ROI),21,0.8919
+noise,0.0,NMF+CNN (channels),21,0.9267
+bias,0.0,CNN-only,21,0.9275
+bias,0.0,NMF+CNN (ROI),21,0.8919
+bias,0.0,NMF+CNN (channels),21,0.9267
+motion,0.0,CNN-only,21,0.9275
+motion,0.0,NMF+CNN (ROI),21,0.8919
+motion,0.0,NMF+CNN (channels),21,0.9267
+noise,0.02,CNN-only,21,0.9293
+noise,0.02,NMF+CNN (ROI),21,0.8933
+noise,0.02,NMF+CNN (channels),21,0.9287
+noise,0.05,CNN-only,21,0.9280
+noise,0.05,NMF+CNN (ROI),21,0.8807
+noise,0.05,NMF+CNN (channels),21,0.9338
+noise,0.1,CNN-only,21,0.9205
+noise,0.1,NMF+CNN (ROI),21,0.8679
+noise,0.1,NMF+CNN (channels),21,0.9190
+noise,0.15,CNN-only,21,0.9137
+noise,0.15,NMF+CNN (ROI),21,0.8683
+noise,0.15,NMF+CNN (channels),21,0.8037
+bias,0.1,CNN-only,21,0.9275
+bias,0.1,NMF+CNN (ROI),21,0.8785
+bias,0.1,NMF+CNN (channels),21,0.9310
+bias,0.2,CNN-only,21,0.9264
+bias,0.2,NMF+CNN (ROI),21,0.8891
+bias,0.2,NMF+CNN (channels),21,0.9307
+bias,0.3,CNN-only,21,0.9271
+bias,0.3,NMF+CNN (ROI),21,0.8741
+bias,0.3,NMF+CNN (channels),21,0.9296
+bias,0.4,CNN-only,21,0.9273
+bias,0.4,NMF+CNN (ROI),21,0.8979
+bias,0.4,NMF+CNN (channels),21,0.9265
+motion,0.1,CNN-only,21,0.7466
+motion,0.1,NMF+CNN (ROI),21,0.8034
+motion,0.1,NMF+CNN (channels),21,0.7185
+motion,0.2,CNN-only,21,0.6109
+motion,0.2,NMF+CNN (ROI),21,0.7503
+motion,0.2,NMF+CNN (channels),21,0.5513
+motion,0.3,CNN-only,21,0.6303
+motion,0.3,NMF+CNN (ROI),21,0.6395
+motion,0.3,NMF+CNN (channels),21,0.5916
+motion,0.4,CNN-only,21,0.5726
+motion,0.4,NMF+CNN (ROI),21,0.2252
+motion,0.4,NMF+CNN (channels),21,0.5108
+noise,0.0,CNN-only,19,0.9360
+noise,0.0,NMF+CNN (ROI),19,0.9303
+noise,0.0,NMF+CNN (channels),19,0.9256
+bias,0.0,CNN-only,19,0.9360
+bias,0.0,NMF+CNN (ROI),19,0.9303
+bias,0.0,NMF+CNN (channels),19,0.9256
+motion,0.0,CNN-only,19,0.9360
+motion,0.0,NMF+CNN (ROI),19,0.9303
+motion,0.0,NMF+CNN (channels),19,0.9256
+noise,0.02,CNN-only,19,0.9344
+noise,0.02,NMF+CNN (ROI),19,0.9451
+noise,0.02,NMF+CNN (channels),19,0.9230
+noise,0.05,CNN-only,19,0.9367
+noise,0.05,NMF+CNN (ROI),19,0.9414
+noise,0.05,NMF+CNN (channels),19,0.9245
+noise,0.1,CNN-only,19,0.8965
+noise,0.1,NMF+CNN (ROI),19,0.8850
+noise,0.1,NMF+CNN (channels),19,0.8963
+noise,0.15,CNN-only,19,0.8660
+noise,0.15,NMF+CNN (ROI),19,0.5608
+noise,0.15,NMF+CNN (channels),19,0.8288
+bias,0.1,CNN-only,19,0.9362
+bias,0.1,NMF+CNN (ROI),19,0.9323
+bias,0.1,NMF+CNN (channels),19,0.9312
+bias,0.2,CNN-only,19,0.9346
+bias,0.2,NMF+CNN (ROI),19,0.9439
+bias,0.2,NMF+CNN (channels),19,0.9331
+bias,0.3,CNN-only,19,0.9371
+bias,0.3,NMF+CNN (ROI),19,0.9293
+bias,0.3,NMF+CNN (channels),19,0.9307
+bias,0.4,CNN-only,19,0.9329
+bias,0.4,NMF+CNN (ROI),19,0.9322
+bias,0.4,NMF+CNN (channels),19,0.9290
+motion,0.1,CNN-only,19,0.8834
+motion,0.1,NMF+CNN (ROI),19,0.8975
+motion,0.1,NMF+CNN (channels),19,0.7221
+motion,0.2,CNN-only,19,0.7571
+motion,0.2,NMF+CNN (ROI),19,0.8823
+motion,0.2,NMF+CNN (channels),19,0.7214
+motion,0.3,CNN-only,19,0.6679
+motion,0.3,NMF+CNN (ROI),19,0.5066
+motion,0.3,NMF+CNN (channels),19,0.6038
+motion,0.4,CNN-only,19,0.3491
+motion,0.4,NMF+CNN (ROI),19,0.2176
+motion,0.4,NMF+CNN (channels),19,0.4796
+noise,0.0,CNN-only,32,0.9187
+noise,0.0,NMF+CNN (ROI),32,0.9209
+noise,0.0,NMF+CNN (channels),32,0.9050
+bias,0.0,CNN-only,32,0.9187
+bias,0.0,NMF+CNN (ROI),32,0.9209
+bias,0.0,NMF+CNN (channels),32,0.9050
+motion,0.0,CNN-only,32,0.9187
+motion,0.0,NMF+CNN (ROI),32,0.9209
+motion,0.0,NMF+CNN (channels),32,0.9050
+noise,0.02,CNN-only,32,0.9203
+noise,0.02,NMF+CNN (ROI),32,0.9380
+noise,0.02,NMF+CNN (channels),32,0.9041
+noise,0.05,CNN-only,32,0.9182
+noise,0.05,NMF+CNN (ROI),32,0.9104
+noise,0.05,NMF+CNN (channels),32,0.9055
+noise,0.1,CNN-only,32,0.8847
+noise,0.1,NMF+CNN (ROI),32,0.9021
+noise,0.1,NMF+CNN (channels),32,0.8730
+noise,0.15,CNN-only,32,0.8925
+noise,0.15,NMF+CNN (ROI),32,0.8714
+noise,0.15,NMF+CNN (channels),32,0.8182
+bias,0.1,CNN-only,32,0.9192
+bias,0.1,NMF+CNN (ROI),32,0.9388
+bias,0.1,NMF+CNN (channels),32,0.9004
+bias,0.2,CNN-only,32,0.9150
+bias,0.2,NMF+CNN (ROI),32,0.9169
+bias,0.2,NMF+CNN (channels),32,0.9078
+bias,0.3,CNN-only,32,0.9154
+bias,0.3,NMF+CNN (ROI),32,0.9430
+bias,0.3,NMF+CNN (channels),32,0.9069
+bias,0.4,CNN-only,32,0.9129
+bias,0.4,NMF+CNN (ROI),32,0.9400
+bias,0.4,NMF+CNN (channels),32,0.8938
+motion,0.1,CNN-only,32,0.8742
+motion,0.1,NMF+CNN (ROI),32,0.8942
+motion,0.1,NMF+CNN (channels),32,0.7823
+motion,0.2,CNN-only,32,0.7377
+motion,0.2,NMF+CNN (ROI),32,0.7820
+motion,0.2,NMF+CNN (channels),32,0.6840
+motion,0.3,CNN-only,32,0.6569
+motion,0.3,NMF+CNN (ROI),32,0.3034
+motion,0.3,NMF+CNN (channels),32,0.6364
+motion,0.4,CNN-only,32,0.4952
+motion,0.4,NMF+CNN (ROI),32,0.0896
+motion,0.4,NMF+CNN (channels),32,0.5287
+noise,0.0,CNN-only,34,0.9034
+noise,0.0,NMF+CNN (ROI),34,0.9297
+noise,0.0,NMF+CNN (channels),34,0.9252
+bias,0.0,CNN-only,34,0.9034
+bias,0.0,NMF+CNN (ROI),34,0.9297
+bias,0.0,NMF+CNN (channels),34,0.9252
+motion,0.0,CNN-only,34,0.9034
+motion,0.0,NMF+CNN (ROI),34,0.9297
+motion,0.0,NMF+CNN (channels),34,0.9252
+noise,0.02,CNN-only,34,0.8978
+noise,0.02,NMF+CNN (ROI),34,0.9320
+noise,0.02,NMF+CNN (channels),34,0.9227
+noise,0.05,CNN-only,34,0.8977
+noise,0.05,NMF+CNN (ROI),34,0.9316
+noise,0.05,NMF+CNN (channels),34,0.9217
+noise,0.1,CNN-only,34,0.8916
+noise,0.1,NMF+CNN (ROI),34,0.9276
+noise,0.1,NMF+CNN (channels),34,0.8775
+noise,0.15,CNN-only,34,0.8765
+noise,0.15,NMF+CNN (ROI),34,0.9054
+noise,0.15,NMF+CNN (channels),34,0.7785
+bias,0.1,CNN-only,34,0.8999
+bias,0.1,NMF+CNN (ROI),34,0.9256
+bias,0.1,NMF+CNN (channels),34,0.9254
+bias,0.2,CNN-only,34,0.8991
+bias,0.2,NMF+CNN (ROI),34,0.9274
+bias,0.2,NMF+CNN (channels),34,0.9251
+bias,0.3,CNN-only,34,0.8960
+bias,0.3,NMF+CNN (ROI),34,0.9377
+bias,0.3,NMF+CNN (channels),34,0.9272
+bias,0.4,CNN-only,34,0.8968
+bias,0.4,NMF+CNN (ROI),34,0.9275
+bias,0.4,NMF+CNN (channels),34,0.9269
+motion,0.1,CNN-only,34,0.8338
+motion,0.1,NMF+CNN (ROI),34,0.8904
+motion,0.1,NMF+CNN (channels),34,0.7765
+motion,0.2,CNN-only,34,0.6832
+motion,0.2,NMF+CNN (ROI),34,0.7877
+motion,0.2,NMF+CNN (channels),34,0.6435
+motion,0.3,CNN-only,34,0.6190
+motion,0.3,NMF+CNN (ROI),34,0.6374
+motion,0.3,NMF+CNN (channels),34,0.6550
+motion,0.4,CNN-only,34,0.4872
+motion,0.4,NMF+CNN (ROI),34,0.6550
+motion,0.4,NMF+CNN (channels),34,0.5500
+noise,0.0,CNN-only,38,0.9266
+noise,0.0,NMF+CNN (ROI),38,0.9512
+noise,0.0,NMF+CNN (channels),38,0.9373
+bias,0.0,CNN-only,38,0.9266
+bias,0.0,NMF+CNN (ROI),38,0.9512
+bias,0.0,NMF+CNN (channels),38,0.9373
+motion,0.0,CNN-only,38,0.9266
+motion,0.0,NMF+CNN (ROI),38,0.9512
+motion,0.0,NMF+CNN (channels),38,0.9373
+noise,0.02,CNN-only,38,0.9276
+noise,0.02,NMF+CNN (ROI),38,0.9521
+noise,0.02,NMF+CNN (channels),38,0.9371
+noise,0.05,CNN-only,38,0.9301
+noise,0.05,NMF+CNN (ROI),38,0.9478
+noise,0.05,NMF+CNN (channels),38,0.9383
+noise,0.1,CNN-only,38,0.9176
+noise,0.1,NMF+CNN (ROI),38,0.9504
+noise,0.1,NMF+CNN (channels),38,0.9312
+noise,0.15,CNN-only,38,0.8475
+noise,0.15,NMF+CNN (ROI),38,0.9279
+noise,0.15,NMF+CNN (channels),38,0.6177
+bias,0.1,CNN-only,38,0.9262
+bias,0.1,NMF+CNN (ROI),38,0.9434
+bias,0.1,NMF+CNN (channels),38,0.9342
+bias,0.2,CNN-only,38,0.9267
+bias,0.2,NMF+CNN (ROI),38,0.9511
+bias,0.2,NMF+CNN (channels),38,0.9341
+bias,0.3,CNN-only,38,0.9268
+bias,0.3,NMF+CNN (ROI),38,0.9517
+bias,0.3,NMF+CNN (channels),38,0.9340
+bias,0.4,CNN-only,38,0.9254
+bias,0.4,NMF+CNN (ROI),38,0.9442
+bias,0.4,NMF+CNN (channels),38,0.9329
+motion,0.1,CNN-only,38,0.8967
+motion,0.1,NMF+CNN (ROI),38,0.9391
+motion,0.1,NMF+CNN (channels),38,0.7277
+motion,0.2,CNN-only,38,0.7941
+motion,0.2,NMF+CNN (ROI),38,0.8607
+motion,0.2,NMF+CNN (channels),38,0.6919
+motion,0.3,CNN-only,38,0.4999
+motion,0.3,NMF+CNN (ROI),38,0.4353
+motion,0.3,NMF+CNN (channels),38,0.4163
+motion,0.4,CNN-only,38,0.4747
+motion,0.4,NMF+CNN (ROI),38,0.4738
+motion,0.4,NMF+CNN (channels),38,0.5759

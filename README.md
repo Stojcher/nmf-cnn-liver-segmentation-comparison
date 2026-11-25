@@ -30,6 +30,74 @@ contribution is **robustness** — lowest variance and a far better worst case o
 domain-shift outlier (patient 15: 0.278 vs 0.084). Dice is the volumetric (3D)
 per-patient Dice; ± is the population standard deviation over the 20 patients.
 
+## Revision analyses (peer review, round 1)
+
+A second set of analyses was added during revision — to strengthen the robustness
+claim beyond the single outlier and to broaden the evaluation beyond Dice. Each is a
+standalone, deterministic, CPU-only script that **reuses the cached fold models /
+feature cache (no retraining)** and writes a Markdown table under `comparison/results/`.
+
+| Script | Adds | Output | Reviewer point |
+|---|---|---|---|
+| `comparison/extra_metrics.py` | IoU, sensitivity, precision, HD95 & ASSD (3D, mm) for all 4 arms; re-verifies the Table 1 Dice | `results/extra_metrics.{md,json}` | more metrics |
+| `comparison/effect_sizes.py` | Cohen's *d<sub>z</sub>* + 95% BCa bootstrap CIs for the paired arm differences (n=20, and n=19 without the outlier) | `results/effect_size_table.md` | small-N uncertainty |
+| `comparison/robustness_stress.py` | synthetic stress test: Rician noise / bias field / k-space motion injected on the **raw** image, full pipeline re-run, over all 20 patients | `results/robustness_stress.{csv,md}`, `figs/robustness_curves.png` | N=1 robustness |
+| `comparison/make_robustness_table.py` | motion table (paper Table 4) from the stress-test CSV | `results/table4_motion.md` | — |
+| `comparison/k_ablation.py` | NMF component-count ablation (NMF-only CV for k ∈ {3,4,5,6}) | `results/k_ablation.{md,json}`, `figs/k_ablation.png` | k=5 justification |
+| `comparison/channel_stability.py` | channel-ordering stability: which intensity-sorted channel the liver occupies | `results/channel_stability.md`, `figs/channel_stability.png` | sorting is ad-hoc |
+| `comparison/cost_memory.py` | peak RAM (an isolated subprocess per arm) + preprocessing-vs-NMF timing split (`--breakdown`) | `results/cost_memory.md`, `results/cost_timing_breakdown.md` | cost evidence |
+| `comparison/make_cost_table.py` | consolidated cost + memory table from the three cost outputs | `results/cost_table_final.md` | — |
+
+```bash
+python comparison/extra_metrics.py            # extra metrics (also re-verifies Dice reproduces)
+python comparison/effect_sizes.py             # effect sizes + bootstrap CIs
+python comparison/robustness_stress.py        # stress test (reuses cached models)
+python comparison/make_robustness_table.py    # -> Table 4 (motion); --perturbation noise|bias
+python comparison/k_ablation.py --ks 3,4,5,6  # k ablation (rebuilds the feat cache for each NEW k)
+python comparison/channel_stability.py        # channel-ordering stability
+python comparison/cost_memory.py              # peak RAM + timing (spawns isolated workers)
+python comparison/cost_memory.py --breakdown  # preprocessing vs NMF split
+python comparison/make_cost_table.py          # -> consolidated cost table
+```
+
+### Additional metrics (5-fold CV, 20 patients; mean — see `results/extra_metrics.md` for ±std)
+
+| Approach | Dice | IoU | Sensitivity | Precision | HD95 (mm) | ASSD (mm) |
+|---|---|---|---|---|---|---|
+| NMF-only | 0.743 | 0.604 | 0.831 | 0.692 | 51.77 | 13.52 |
+| CNN-only | 0.855 | 0.773 | 0.851 | 0.888 | 47.35 | 8.41 |
+| NMF+CNN (ROI) | 0.862 | 0.784 | 0.846 | 0.919 | 31.72 | 6.82 |
+| NMF+CNN (channels) | 0.868 | 0.785 | 0.857 | 0.906 | 23.61 | 5.36 |
+
+The boundary metrics (HD95, ASSD) separate the CNN arms more clearly than Dice and
+favor channel fusion; the low NMF-only precision (0.692) reflects its tendency to
+over-segment.
+
+### Robustness — synthetic motion stress (mean (worst-case) Dice over 20 patients)
+
+| Approach | Clean | 10% | 20% | 30% | 40% |
+|---|---|---|---|---|---|
+| CNN-only | 0.855 (0.084) | 0.758 (0.030) | 0.647 (0.051) | 0.542 (0.046) | 0.423 (0.021) |
+| NMF+CNN (ROI) | 0.862 (0.153) | 0.745 (0.019) | 0.578 (0.000) | 0.360 (0.000) | 0.187 (0.000) |
+| NMF+CNN (channels) | 0.868 (**0.278**) | 0.719 (**0.257**) | 0.630 (**0.346**) | 0.540 (**0.162**) | 0.455 (**0.134**) |
+
+Shared preprocessing (N4 + non-local-means) absorbs the noise and bias-field
+corruption for every arm; **motion** — which survives preprocessing — is where the
+arms separate. Channel fusion holds a far higher **worst-case** Dice than CNN-only at
+every severity, while the ROI cascade degrades fastest. This reproduces, now over all
+20 patients, the worst-case robustness first seen on the single outlier (patient 15).
+
+**Other checks.** *Effect sizes:* the differences among the CNN arms are small
+(|*d<sub>z</sub>*| ≤ 0.27, 95% CIs spanning 0; ≤ 0.15 with the outlier removed), while
+NMF-only vs the CNN arms is a large effect (*d<sub>z</sub>* 1.15–1.81) — so the null
+among the CNN arms is a genuinely small effect, not merely an undetected one.
+*k-ablation:* full-volume Dice varies only 0.037 across k ∈ {3,4,5,6} (highest at
+k=4), so the a-priori k=5 is a safe choice. *Channel stability:* no patient has the
+liver pinned to one sorted channel in >80% of its slices — the intensity sort gives a
+consistent channel *structure*, not a fixed anatomical assignment. *Cost:* the extra
+NMF costs ~9 s/volume (one-time, cached) against 70–80 min of U-Net training, and peak
+RAM stays ≤ 2.1 GB — negligible on the CPU-only setup (see `results/cost_table_final.md`).
+
 ## Requirements
 
 - **Python 3.11** (CPU-only; no GPU required).
@@ -210,7 +278,19 @@ comparison/                 ← the 4-approach framework (RUN THINGS FROM HERE)
   evaluate.py               aggregate arms -> table.md, stats, figures
   save_final_figures.py     publication figures -> "Results final/"
   visualize_arms.py         per-patient qualitative overlays
+  # revision analyses (peer-review round 1) — reuse caches, no retraining:
+  extra_metrics.py          IoU / sensitivity / precision / HD95 / ASSD (all arms)
+  effect_sizes.py           Cohen's d_z + BCa bootstrap CIs
+  robustness_stress.py      synthetic noise / bias / motion stress test
+  make_robustness_table.py  stress CSV -> Table 4 (motion)
+  k_ablation.py             NMF component-count ablation (k in {3,4,5,6})
+  channel_stability.py      NMF channel-ordering stability
+  cost_memory.py            peak RAM + preprocessing/NMF timing split
+  make_cost_table.py        -> consolidated cost + memory table
   results/                  per-arm JSON + table.md + per_patient.csv + figs
+                            + revision tables (extra_metrics, effect_size_table,
+                            robustness_stress, table4_motion, k_ablation,
+                            channel_stability, cost_*)
   models/                   cached fold models              [gitignored — regenerate]
   Results final/            final high-DPI PNGs
   .roi_cache/ .nmf_maps_cache/   deterministic input caches [gitignored — auto-built]
